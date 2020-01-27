@@ -27,9 +27,14 @@ button.Point:hover{
     }
   }
 
-  @media screen and (max-width: 426px){
+@media screen and (max-width: 426px){
+    nav.area ul{
+        width: 100%;
+        display: flex;
+    }
+
     button.Point{
         position: initial;
         margin-top: 15px;
     }
-  }
+}

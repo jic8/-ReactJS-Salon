@@ -4,8 +4,9 @@ import Point from '../Companents/Point/Point'
 import './App.css';
 
 export default function App() {
-  const clienWidth = document.body.clientWidth
-  if(clienWidth >= 426){
+  const clienWidth = window.screen.width
+
+  if(clienWidth >= 641){
     return (
       <div className="App">
         <Header />

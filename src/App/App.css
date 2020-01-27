@@ -25,3 +25,22 @@
     width: 826px;
   }
 }
+
+@media (min-width: 640px) {
+  nav.area ul {
+    display: flex;
+    padding: 0px;
+  }
+
+  nav.area ul .Point{
+    position: static;
+    width: 19%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav.area ul {
+    flex-direction: column;
+  }
+}
