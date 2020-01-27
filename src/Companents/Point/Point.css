@@ -8,14 +8,28 @@ button.Point{
     align-items: center;
     z-index: 2;
     font-size: .7rem;
-    top: 30%;
+    top: 28%;
     display: flex;
     justify-content: center;
     position: absolute;
     cursor: pointer;
 }
+
 button.Point:hover{
     background-color: #ff0100f8;
     color: #fff;
     border: none;
 }
+
+@media screen and (max-width: 690px) {
+    button.Point{
+        top: 187px;
+    }
+  }
+
+  @media screen and (max-width: 426px){
+    button.Point{
+        position: initial;
+        margin-top: 15px;
+    }
+  }

@@ -48,3 +48,17 @@
 .Salon-header img {
     width: 50px;
 }
+
+
+@media screen and (max-width: 690px) {
+    .Salon-header{
+      position: unset;
+      flex-wrap: wrap;
+    }
+  
+    .Salon-header *{
+      width: 100vw;
+      justify-content: center;
+      padding: 5px 0;
+    }
+}

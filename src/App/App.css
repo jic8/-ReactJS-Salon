@@ -1,39 +1,27 @@
 .Salon-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Salon-main .bg{
   position: relative;
   background-image: url("./salon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 10%;
+  width: 1200px;
+  height: 100vh;
 }
 
 .Salon-main .area{
-  position: relative;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  width: 400px;
+  position: absolute;
   height: 1000px;
   max-height: 100vh;
 }
 
-@media screen and (max-width: 1440px) {
-  .Salon-main{
-    background-size: cover;
-    top: -29px;
-    background-position: 80% 52%;
+@media screen and (max-width: 690px) {
+  .Salon-main .bg{
+    width: 826px;
   }
-}
-
-@media screen and (max-width: 830px) {
-  .Salon-main{
-    background-size: cover;
-    background-position: 0px -7px;
-    top: -70px;
-    width: 141%;
-  }
-  .Salon-main .area {
-    width: 322px;
-    top: -3px;
-    left: -14px;
-  } 
 }

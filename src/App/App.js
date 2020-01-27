@@ -11,18 +11,30 @@ export default function App() {
         <Header />
         <main className="Salon-main">
           <nav className="area">
-            <Point  posX='-18%' text="Аренда мест"/>
-            <Point  posX='38%' text="Мужской мастер"/>
-            <Point  posX='84%' text="Женский мастер"/>
-            <Point  posX='-35%' posY='51%' text="Маникюр"/>
-            <Point  posX='120%' posY='55%' text="Педикюр"/>
+            <div className="bg"></div>
+            <Point  posX='29%' text="Аренда мест"/>
+            <Point  posX='46%' text="Мужской мастер"/>
+            <Point  posX='60%' text="Женский мастер"/>
+            <Point  posX='23%' posY='48%' text="Маникюр"/>
+            <Point  posX='69%' posY='51%' text="Педикюр"/>
           </nav>
         </main>
       </div>
     );
   }else{
     return (
-      <div>mobile</div>
+      <div className="App">
+        <Header />
+        <nav className="area">
+          <ul>
+            <Point text="Мужской мастер"/>
+            <Point text="Женский мастер"/>
+            <Point text="Маникюр"/>
+            <Point text="Педикюр"/>
+            <Point text="Аренда мест"/>
+          </ul>
+        </nav>
+      </div>
     );
   }
 }
