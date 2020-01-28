@@ -1,0 +1,32 @@
+.mainAside{
+    float: right;
+    height: 100vh;
+    background-color: #535353;
+    z-index: 4;
+    position: relative;
+    display: flex;
+    color: #fff;
+    animation: open .5s forwards;
+    flex-direction: column;
+    padding:30px 0 0 30px;
+}
+
+.mainAside a.close{
+    font-size: 3em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainAside .contant{
+    margin: 30px auto;
+}
+
+@keyframes open{
+    0%{
+        width:0;
+    }
+    100%{
+        width: 50%;
+        
+    }
+}

@@ -1,4 +1,4 @@
-button.Point{
+a.Point{
     border: 1px solid #5d5d5d;
     color: #5d5d5d;
     background-color: transparent;
@@ -8,22 +8,35 @@ button.Point{
     align-items: center;
     z-index: 2;
     font-size: .7rem;
-    top: 28%;
+    top: 27%;
     display: flex;
     justify-content: center;
     position: absolute;
     cursor: pointer;
+    animation: 2s move infinite;
+    text-decoration: none;
 }
 
-button.Point:hover{
+a.Point:hover{
     background-color: #ff0100f8;
+    color: #fff;
+    border: none;
+    transition: .5s background-color ease-out;
+    animation: none;
+}
+
+nav.area a.active{
+    background-color:#ff0100f8;
     color: #fff;
     border: none;
 }
 
 @media screen and (max-width: 690px) {
-    button.Point{
+    a.Point{
         top: 187px;
+        animation: none;
+        padding: 2%;
+        text-align: center;
     }
   }
 
@@ -33,8 +46,13 @@ button.Point:hover{
         display: flex;
     }
 
-    button.Point{
+    a.Point{
         position: initial;
         margin-top: 15px;
     }
+}
+
+@keyframes move {
+    0%,100%{margin-top: 0;}
+    50%{margin-top: 10px;}
 }
